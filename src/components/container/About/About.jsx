@@ -3,12 +3,10 @@ import "./About.scss";
 
 import { motion } from "framer-motion";
 import { bios } from "../../../Data";
-import portfolio1 from "../../../assets/portfolio.jpeg";
-import asimResume from '../../../assets/asimResume.pdf'
+import portfolio1 from "../../../assets/anas.png";
+import anasResume from "../../../assets/anasResume.pdf";
 
 const About = () => {
-
-
   return (
     <div className="container " id="about">
       <motion.div
@@ -40,34 +38,32 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p>
-            I am a highly skilled front-end developer with a passion for coding
-            and design. With expertise in HTML, CSS, Tailwind CSS, Bootstrap,
-            WordPress, Wix, Elementor, React, and React Native, I specialize in
-            creating visually stunning and user-friendly interfaces. Whether
-            it's developing responsive websites, customizing WordPress themes,
-            or building cross-platform mobile applications, I strive to exceed
-            client expectations by delivering high-quality results. I have a
-            strong eye for design and a commitment to writing clean and
-            efficient code. With my dedication, creativity, and strong
-            communication skills, I am confident in my ability to contribute to
-            the success of any project.
+            My name is "Mohd Anas" , a self-taught
+            passionate " Full Stack Developer" from India. I'm passionate
+            towards my work with problem-solving skills, strong time management
+            skills and resistance towards stress and adaptability. I love to
+            work with a team. Offering strong React skills and working
+            experience with NodeJs, MongoDb,  JavaScript ,Firebase, frameworks, and
+            many more.
           </p>
-          {bios.map((bio) => {
-            return (
-              <div className="bio" key={bio.id}>
-                <span className="bioKey">
-                  {bio.icon}
-                  {bio.key}
-                </span>
-                <span className="bioValue">{bio.value}</span>
-              </div>
-            );
-          })}
+          {bios.map((bio) => (
+  <div className="bio" key={bio.id}>
+    <span className="bioKey">
+      {bio.icon}
+      {bio.key}
+    </span>
+    <span className="bioValue">
+      {bio.link ? <a  className= "link" href={bio.link}>{bio.value}</a> : bio.value}
+    </span>
+  </div>
+))}
+
           <motion.a
-            href={asimResume}
-            download="asimResume.pdf"
+            href={anasResume}
+            download="anasResume.pdf"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
+            className="resume"
           >
             Download Resume
           </motion.a>

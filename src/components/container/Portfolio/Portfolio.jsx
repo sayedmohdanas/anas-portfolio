@@ -80,12 +80,13 @@ const Portfolio = () => {
                   <FiGithub />
                 </motion.a>
                   
-                <motion.a href='#'
+                <motion.a href='https://drive.google.com/file/d/1Eu5dEgMxGPMbhDobyaQF01V-9c40EIVk/view?usp=sharing'
+                
                 whileInView={{scale: [0,1]}}
                  whileHover={{scale: [1, 1.1]}}
                  transition={{duration: 0.3}}
                 >
-                  <FiEye />
+                  <FiEye  />
                 </motion.a>
               </motion.div>
             </div>

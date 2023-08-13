@@ -6,8 +6,8 @@ import { navLinks } from '../../Data';
 import { socialIcons } from '../../Data';
 const Navbar = () => {
     const socialLinks = [
-        'https://www.instagram.com/sayed_aasim09/',
-        'https://www.linkedin.com/in/sayed-aasim-8647251a3/',
+        'https://www.instagram.com/anas_sidz/',
+        'https://www.linkedin.com/in/mohd-anas-77b85b247',
       ];
       
     

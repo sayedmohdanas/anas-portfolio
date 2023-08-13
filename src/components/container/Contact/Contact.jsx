@@ -24,17 +24,21 @@ const Contact = () => {
         >
           <h3>Just Say Hi</h3>
           <p className="contact_text">
-            Hey there, I'm Sayed Aasim a passionate frontend developer with a
-            knack for creating visually appealing and user-friendly web
-            experiences. With 1 years of experience in the world of coding and
-            design, I've honed my skills in HTML, CSS, JavaScript, and various
-            frontend frameworks like React and Vue.
+          My name is "Mohd Anas" , a self-taught
+            passionate " Full Stack Developer" from India. I'm passionate
+            towards my work with problem-solving skills, strong time management
+            skills and resistance towards stress and adaptability. I love to
+            work with a team. Offering strong React skills and working
+            experience with NodeJs, MongoDb,  JavaScript ,Firebase, frameworks, and
+            many more.
           </p>
           {contacts.map((contact) => {
             return (
               <div className="contact_left" key={contact.id}>
                 <div className="icon">{contact.icon}</div>
-                <p>{contact.infoText}</p>
+                {/* <p>{contact.infoText}</p> */}
+                {contact.link ? <a  className="link-contact" href={contact.link}>{contact.infoText}</a> : contact.infoText}
+
               </div>
             );
           })}

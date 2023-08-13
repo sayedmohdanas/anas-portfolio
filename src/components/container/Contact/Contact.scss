@@ -43,6 +43,10 @@
            p {
             font-size: 0.85rem;
            }
+           .link-contact{
+            text-decoration: none;
+            color: black;
+        }
         }
         .social_icons {
             display: flex;
@@ -112,5 +116,6 @@
             color: #fff;
             text-transform: capitalize;
         }
+        
     }
 }

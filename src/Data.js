@@ -13,7 +13,9 @@ import {
   FaWordpress,
   FaBootstrap
 } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
+import { DiJavascript,DiMongodb } from "react-icons/di";
+import { SiExpress, SiTypescript } from "react-icons/si";
+
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
@@ -34,31 +36,33 @@ export const bios = [
     id: 1,
     icon: <FaUser />,
     key: "Name",
-    value: "Sayed Aasim",
+    value: "Mohd Anas",
   },
   {
     id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
-    value: "+916386542125",
+    value: "+917007130132",
+    link: "tel:+917007130132", // Phone link
   },
   {
     id: 3,
     icon: <FaPaperPlane />,
     key: "Email",
-    value: "sayedaasim0945@gmail.com",
+    value: "mohdanas9272@gmail.com",
+    link: "mailto:mohdanas9272@gmail.com", // Email link
   },
 ];
 
 export const icons = [
   <FaHtml5 />,
-  <FaCss3 />,
-  <DiJavascript />,
   <FaBootstrap />,
+  <DiJavascript />,
+  <SiTypescript/>,
   <FaReact />,
   <FaNodeJs />,
-  <FaWix />,
-  <FaWordpress />,
+  <DiMongodb />,
+  <SiExpress />,
 ];
 
 export const experiences = [
@@ -67,14 +71,9 @@ export const experiences = [
     di: 1,
     year: "2023",
     position: "Junior Web Developer",
-    company: "sidzifi.com",
+    company: "24*7 CLICK ENTERPRISE PVT LIMITED",
   },
-  {
-    id: 2,
-    year: "2022",
-    position: "Intern Web Dveloper",
-    company: "sidzifi.com",
-  },
+  
 ];
 export const finishes = [
   {
@@ -90,12 +89,13 @@ export const finishes = [
   },
  
 ];
+
 export const workImages = [
   {
     id: 1,
     img: work1,
     name: "project 1",
-    category: "web",
+    category: "app",
   },
   {
     id: 2,
@@ -140,11 +140,15 @@ export const contacts = [
   {
     id: 2,
     icon: <FaPaperPlane />,
-    infoText: "sayedaasim0945@gmail.com",
+    infoText: "mohdanas9272@gmail.com",
+    link: "mailto:mohdanas9272@gmail.com", // Email link
+
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: "+91 6386542125",
+    infoText: "+91 7007130132",
+    link: "tel:+917007130132", // Phone link
+
   },
 ];

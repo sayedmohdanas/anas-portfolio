@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 const Footer = () => {
 
   const socialLinks = [
-    'https://www.instagram.com/sayed_aasim09/',
-    'https://www.linkedin.com/in/sayed-aasim-8647251a3/',
+    'https://www.instagram.com/anas_sidz/',
+    'https://www.linkedin.com/in/mohd-anas-77b85b247',
   ];
 
 
@@ -22,7 +22,7 @@ const Footer = () => {
       className='footer'
     >
       <div className="copyright">
-        <p>Copyright&copy;2023 All rights reserved.Made by <span>Sayed Aasim</span></p>
+        <p>Copyright&copy;2023 All rights reserved.Made by <span>Mohd Anas</span></p>
       </div>
       <div className="followMe">
         <h4>Follow Me</h4>
