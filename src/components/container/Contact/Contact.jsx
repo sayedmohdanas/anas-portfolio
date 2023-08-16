@@ -6,6 +6,12 @@ import { socialIcons } from "../../../Data";
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const socialLinks = [
+    'https://www.instagram.com/anas_sidz/',
+    'https://www.linkedin.com/in/mohd-anas-77b85b247',
+    'https://github.com/sayedmohdanas?tab=repositories'
+
+  ];
   return (
     <div className="container" id="contact">
       <motion.div
@@ -33,22 +39,34 @@ const Contact = () => {
             experience with NodeJs, MongoDb,  JavaScript ,Firebase, frameworks, and
             many more.
           </p>
-          {contacts.map((contact) => {
-            return (
-              <div className="contact_left" key={contact.id}>
-                <div className="icon">{contact.icon}</div>
-                {/* <p>{contact.infoText}</p> */}
-                {contact.link ? <a  className="link-contact" href={contact.link}>{contact.infoText}</a> : contact.infoText}
+          <div>
+  {contacts.map((contact) => (
+    <div className="contact_left" key={contact.id}>
+      <div className="icon">{contact.icon}</div>
+      {contact.link ? (
+        <a className="link-contact" href={contact.link} target="_blank" rel="noopener noreferrer">
+          {contact.infoText}
+        </a>
+      ) : (
+        <p>{contact.infoText}</p>
+      )}
+    </div>
+  ))}
+</div>
 
-              </div>
-            );
-          })}
+
           
           <div className="social_icons">
-            {socialIcons.map((socialIcon, index) => {
-              return <div key={index}>{socialIcon}</div>;
-            })}
-          </div>
+        {socialIcons.map((socialIcon, index) => (
+        <div className="social_icon" key={index}>
+        <a href={socialLinks[index]} target="_blank" rel="noopener noreferrer">
+        {socialIcon}
+      </a>
+    </div>
+  ))}
+</div>
+             
+          
         </motion.div>
         <motion.div
           initial={{ x: 0, opacity: 0 }}

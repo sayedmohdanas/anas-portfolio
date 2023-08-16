@@ -167,19 +167,23 @@ export const contacts = [
     id: 1,
     icon: <FaMapMarkerAlt />,
     infoText: "Hayat Masjid Zahra colony Thakurganj, Lucknow",
+    link:"https://www.google.com/maps/place/Hayat+Masjid/@26.8750445,80.8863674,17z/data=!4m6!3m5!1s0x399bfe03bdadf159:0x17404fdbfefa440a!8m2!3d26.8750398!4d80.8912383!16s%2Fg%2F1pp2tyvqv?entry=ttu",
+
+  
+
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
     infoText: "mohdanas9272@gmail.com",
-    link: "mailto:mohdanas9272@gmail.com", // Email link
+    link: "mailto:mohdanas9272@gmail.com", 
 
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
     infoText: "+91 7007130132",
-    link: "tel:+917007130132", // Phone link
+    link: "tel:+917007130132", 
 
   },
 ];
