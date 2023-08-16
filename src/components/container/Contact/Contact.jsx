@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Contact.scss";
 import { contacts } from "../../../Data";
@@ -42,6 +43,7 @@ const Contact = () => {
               </div>
             );
           })}
+          
           <div className="social_icons">
             {socialIcons.map((socialIcon, index) => {
               return <div key={index}>{socialIcon}</div>;

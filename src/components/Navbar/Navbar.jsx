@@ -8,6 +8,7 @@ const Navbar = () => {
     const socialLinks = [
         'https://www.instagram.com/anas_sidz/',
         'https://www.linkedin.com/in/mohd-anas-77b85b247',
+        'https://github.com/sayedmohdanas?tab=repositories'
       ];
       
     
