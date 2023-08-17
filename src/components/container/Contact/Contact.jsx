@@ -4,6 +4,8 @@ import "./Contact.scss";
 import { contacts } from "../../../Data";
 import { socialIcons } from "../../../Data";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from 'react-icons/fa';
+
 
 const Contact = () => {
   const socialLinks = [
@@ -39,20 +41,31 @@ const Contact = () => {
             experience with NodeJs, MongoDb,  JavaScript ,Firebase, frameworks, and
             many more.
           </p>
-          <div>
-  {contacts.map((contact) => (
-    <div className="contact_left" key={contact.id}>
-      <div className="icon">{contact.icon}</div>
-      {contact.link ? (
-        <a className="link-contact" href={contact.link} target="_blank" rel="noopener noreferrer">
+          {contacts.map((contact) => (
+  <div className="contact_left" key={contact.id}>
+    <div className="icon">{contact.icon}</div>
+    {contact.link && contact.link.startsWith('tel:') ? (
+      <div>
+        <a className="link-contact" href={`tel:${contact.link}`}>
           {contact.infoText}
         </a>
-      ) : (
-        <p>{contact.infoText}</p>
-      )}
-    </div>
-  ))}
-</div>
+        <br />
+        <a
+          className="link-contact"
+          href={`https://wa.me/${contact.link.replace('tel:', '')}?text=Hi%20Anas`}
+          target="_blank" rel="noopener noreferrer"
+        >
+      <FaWhatsapp /> WhatsApp
+        </a>
+      </div>
+    ) : (
+      <p>{contact.infoText}</p>
+    )}
+  </div>
+))}
+
+
+
 
 
           

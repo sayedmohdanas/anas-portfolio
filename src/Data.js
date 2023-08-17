@@ -172,6 +172,7 @@ export const contacts = [
   
 
   },
+ 
   {
     id: 2,
     icon: <FaPaperPlane />,
