@@ -41,22 +41,35 @@ const Contact = () => {
             experience with NodeJs, MongoDb,  JavaScript ,Firebase, frameworks, and
             many more.
           </p>
-          {contacts.map((contact) => (
+     {contacts.map((contact) => (
   <div className="contact_left" key={contact.id}>
     <div className="icon">{contact.icon}</div>
-    {contact.link && contact.link.startsWith('tel:') ? (
+    {contact.link ? (
       <div>
-        <a className="link-contact" href={`tel:${contact.link}`}>
-          {contact.infoText}
-        </a>
+        {contact.link.startsWith('tel:') ? (
+          <a className="link-contact" href={contact.link}>
+            {contact.infoText}
+          </a>
+        ) : contact.link.startsWith('mailto:') ? (
+          <a className="link-contact" href={contact.link}>
+            {contact.infoText}
+          </a>
+        ) : (
+          <a className="link-contact" href={contact.link} target="_blank" rel="noopener noreferrer">
+            {contact.infoText}
+          </a>
+        )}
         <br />
-        <a
-          className="link-contact"
-          href={`https://wa.me/${contact.link.replace('tel:', '')}?text=Hi%20Anas`}
-          target="_blank" rel="noopener noreferrer"
-        >
-      <FaWhatsapp /> WhatsApp
-        </a>
+        {contact.link.startsWith('tel:') && (
+          <a
+            className="link-contact"
+            href={`https://wa.me/${contact.link.replace('tel:', '')}?text=Hi%20Anas`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp /> WhatsApp
+          </a>
+        )}
       </div>
     ) : (
       <p>{contact.infoText}</p>
@@ -68,10 +81,12 @@ const Contact = () => {
 
 
 
+
+
           
           <div className="social_icons">
         {socialIcons.map((socialIcon, index) => (
-        <div className="social_icon" key={index}>
+        <div className="social_icon "  key={index}>
         <a href={socialLinks[index]} target="_blank" rel="noopener noreferrer">
         {socialIcon}
       </a>

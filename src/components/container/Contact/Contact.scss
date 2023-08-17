@@ -116,6 +116,21 @@
             color: #fff;
             text-transform: capitalize;
         }
+        .social_icons {
+            display: flex;
+            gap: 0.5rem;
+
+            svg {
+                cursor: pointer;
+        color: #fff;
+        opacity: 0.6;
+        transition: 0.3s;
+        z-index: 5;
+                &:hover {
+                    opacity: 1;      
+                }
+            }
+        }
         
     }
 }
