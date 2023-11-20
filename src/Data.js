@@ -76,8 +76,8 @@ export const experiences = [
   {
     di: 1,
     year: "2023",
-    position: "Junior Web Developer",
-    company: "24*7 CLICK ENTERPRISE PVT LIMITED",
+    position: "Web Developer",
+    company: "Sidzifi",
   },
   
 ];
