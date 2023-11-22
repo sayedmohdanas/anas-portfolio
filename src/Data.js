@@ -76,7 +76,7 @@ export const experiences = [
   {
     di: 1,
     year: "2023",
-    position: "Web Developer",
+    position: "MERN STACK DEVLOPER",
     company: "Sidzifi",
   },
   

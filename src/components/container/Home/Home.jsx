@@ -47,7 +47,7 @@ const Home = () => {
           connect with me
         </motion.a>
         <div className="web">MERN STACK DEVLOPER</div>
-        <div className="ui">MERN STACK DEVLOPER</div>
+        <div className="ui">WEB DEVLOPER</div>
         <div className="freelance">Freelancer</div>
       </div>
     </motion.div>
