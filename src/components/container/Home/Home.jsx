@@ -33,7 +33,7 @@ const Home = () => {
         <h3 className="name">
           Hi, I'm <span>Mohd Anas</span>
         </h3>
-        <span className="job">MERN STACK DEVLOPER </span>
+        <span className="job">MERN STACK DEVELOPER </span>
         <span className="text">
           Passionate
           <br /> to craft innovative <br /> web products.
@@ -46,8 +46,8 @@ const Home = () => {
         >
           connect with me
         </motion.a>
-        <div className="web">MERN STACK DEVLOPER</div>
-        <div className="ui">WEB DEVLOPER</div>
+        <div className="web">MERN STACK DEVELOPER</div>
+        <div className="ui">WEB DEVELOPER</div>
         <div className="freelance">Freelancer</div>
       </div>
     </motion.div>
